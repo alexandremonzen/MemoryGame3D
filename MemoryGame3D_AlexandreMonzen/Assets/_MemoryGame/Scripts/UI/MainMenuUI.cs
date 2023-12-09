@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public sealed class MainMenuUI : CommonUI
 {
     [SerializeField] private GameObject _scenarioMenu;
-    
+
     [Header("Buttons")]
     [SerializeField] private Button _playButton;
     [SerializeField] private Button _optionsButon;
@@ -31,7 +31,7 @@ public sealed class MainMenuUI : CommonUI
     private void PlayGame()
     {
         SetCanvasGroupValues(0, false, false);
-        _otherScreens[0].SetActive(false);
+        DesactivateAllOtherScreens();
         SetMainMenuScenario(false, 1.15f);
         GameWasStarted?.Invoke();
     }
@@ -41,7 +41,7 @@ public sealed class MainMenuUI : CommonUI
         bool screenWereActivated = _otherScreens[screenIndex].gameObject.activeSelf;
         DesactivateAllOtherScreens();
 
-        if(!screenWereActivated)
+        if (!screenWereActivated)
             _otherScreens[screenIndex].SetActive(true);
     }
 
@@ -52,13 +52,13 @@ public sealed class MainMenuUI : CommonUI
 
     private void DesactivateAllOtherScreens()
     {
-        foreach(GameObject gameObject in _otherScreens)
+        foreach (GameObject gameObject in _otherScreens)
             gameObject.SetActive(false);
     }
 
     public void SetMainMenuScenario(bool condition, float delay = 0)
     {
-        if(delay > 0)
+        if (delay > 0)
         {
             StartCoroutine(DelaySetCanvas(condition, delay));
             return;
@@ -72,5 +72,5 @@ public sealed class MainMenuUI : CommonUI
         yield return new WaitForSeconds(time);
         SetMainMenuScenario(condition);
     }
-    
+
 }
