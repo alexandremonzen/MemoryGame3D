@@ -26,7 +26,7 @@ MonoBehaviour:
   m_StoreActionsOptimization: 0
   m_SupportsHDR: 1
   m_MSAA: 1
-  m_RenderScale: 1
+  m_RenderScale: 2
   m_MainLightRenderingMode: 1
   m_MainLightShadowsSupported: 1
   m_MainLightShadowmapResolution: 1024
@@ -41,13 +41,13 @@ MonoBehaviour:
   m_ReflectionProbeBoxProjection: 0
   m_ShadowDistance: 11.2
   m_ShadowCascadeCount: 2
-  m_Cascade2Split: 0.125
+  m_Cascade2Split: 0.2767857
   m_Cascade3Split: {x: 0.012999999, y: 0.472}
   m_Cascade4Split: {x: 0.24529971, y: 0.36612386, z: 0.66895473}
   m_CascadeBorder: 0.8854282
   m_ShadowDepthBias: 0
   m_ShadowNormalBias: 0.01
-  m_SoftShadowsSupported: 0
+  m_SoftShadowsSupported: 1
   m_ConservativeEnclosingSphere: 0
   m_NumIterationsEnclosingSphere: 64
   m_AdditionalLightsCookieResolution: 1024

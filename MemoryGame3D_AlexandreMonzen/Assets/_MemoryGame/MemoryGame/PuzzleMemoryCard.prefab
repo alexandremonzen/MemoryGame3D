@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2307253076007829523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2307253076007829524}
+  - component: {fileID: 2307253076007829526}
+  - component: {fileID: 2307253076007829525}
+  m_Layer: 0
+  m_Name: SetCardTextures
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2307253076007829524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2307253076007829523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2307253076324208909}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2307253076007829526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2307253076007829523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee641c447c30a74fb77438394e481be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textureArray: {fileID: 18700000, guid: deaa3de7dd711224bb4111e071c4ec95, type: 3}
+  _sliceIndex: 0
+  _sharedMaterial: {fileID: 2100000, guid: a246d2609fea677498df512597a3670a, type: 2}
+  _previewTextureOnValidate: 1
+--- !u!114 &2307253076007829525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2307253076007829523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee641c447c30a74fb77438394e481be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textureArray: {fileID: 18700000, guid: deaa3de7dd711224bb4111e071c4ec95, type: 3}
+  _sliceIndex: 4
+  _sharedMaterial: {fileID: 2100000, guid: 44b756f70eaf31040b7d775a796068d1, type: 2}
+  _previewTextureOnValidate: 1
+--- !u!1 &2307253076324208906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2307253076324208909}
+  - component: {fileID: 2307253076324208910}
+  - component: {fileID: 2307253076324208907}
+  m_Layer: 0
+  m_Name: PuzzleMemoryCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2307253076324208909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2307253076324208906}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2307253076007829524}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2307253076324208910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2307253076324208906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf69519ae7afab2458de39ab31b08e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoStartEditor: 0
+  _intervalToUnflip: 1
+  _intervalMatchedFeedback: 0.7
+  _intervalAllowFlip: 0.1
+--- !u!114 &2307253076324208907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2307253076324208906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735f3850f629fdf45b6eb2f44607a92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cardPrefab: {fileID: 2304860804602212002, guid: a9658107fe7ad954285d054c3664cbdc, type: 3}
+  _cardAmount: 12
+  _centerCards: 1
+  _cardsPerRow: 4
+  _xDistBetweenObjects: 0.2
+  _zDistBetweenObjects: 0.25
